@@ -4,7 +4,7 @@ const prefix = "^";
 
 client.on('ready', function(){    
     var ms = 40000 ;    
-    var setGame = ['^help | ^inv','Bot V0.5','By : NoNo'];    
+    var setGame = ['^help | ^inv','Bot V0.5','By : JungleMC TeaM'];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
@@ -49,6 +49,8 @@ if (message.content.startsWith(prefix + 'help')) {
 	 ^bot | To Get Info About The Bot
 	 
 	 ^info | To Get Info About The Bot
+
+         ^what | To Get Info About The Server
 `)
   message.author.sendEmbed(embed)
 
@@ -519,8 +521,8 @@ client.on('message', message => {
      
                                                         
                                active.on("collect", r => {
-                                   message.member.addRole(message.guild.roles.find("name", "active"));
-                                   message.member.removeRole(message.guild.roles.find("name", "not active"));
+                                   message.member.addRole(message.guild.roles.find("name", " مفعل"));
+                                   message.member.removeRole(message.guild.roles.find("name", "غير مفعل"));
                                    msg.delete();
                                    message.channel.send(`**تم تفعيلك استمتع.**`).then(m => m.delete(1000));
      
