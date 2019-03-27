@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = ">";
 
 client.on('ready', () => {
-     client.user.setActivity(" >help | >inv",{type: 'WATCHING'})
+     client.user.setActivity(" >help | HeroMC",{type: 'WATCHING'})
 
 });
 
@@ -40,8 +40,6 @@ ${prefix}info ⇏ لمعرفة معلومات البوت
 ${prefix}server ⇏ لمعرفة معلومات السيرفر
 
 ${prefix}roles ⇏ لعرض كل رتب السيرفر
-
-${prefix}inv ⇏ لدعوة البوت لسيرفرك
 
 ${prefix}cc ⇏ لصنع الوان
  
